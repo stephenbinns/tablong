@@ -97,7 +97,11 @@ function update() {
     if (false && twoPlayer) {
         mapKeys(arrowKeys, player2);
     } else {
-        player2.body.velocity.x = table.body.velocity.x;
+        if (table.body.x > player2.body.x){
+            player2.body.velocity.x = table.body.velocity.x
+        } else {
+            player2.body.velocity.x = -table.body.velocity.x
+        }
     }
 
     if (player1.x >= (screen_center - (player1.body.width / 2)) && player1.body.velocity.x >= 0) {
@@ -113,7 +117,6 @@ function update() {
     if (player2.body.velocity.y == 0) {
         player2.setTexture('player1-down');
     }
-
 
     if (table.body.y >= (this.game.config.height - table.body.height)) {
         if (table.body.x < screen_center) {
