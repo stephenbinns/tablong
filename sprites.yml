@@ -1,6 +1,7 @@
 ---
-bad_table:: "┻━┻"
-table: "┏━┓"
+# bad_table:: "┻━┻"
+# table: "┏━┓"
 wall: "▓"
+shrug: "*"
 player1: "(╯°□°)╯"
-player2: "(┛ಠ_ಠ)┛"
+player1-down: "(-°□°)-"
